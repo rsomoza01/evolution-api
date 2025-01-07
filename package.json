@@ -3,11 +3,11 @@
   "version": "2.2.0",
   "description": "Rest api for communication with WhatsApp",
   "type": "commonjs",
-  "main" : "./src/main.js", 
+  "main" : "./dist/main.js", 
   "scripts": {
     "build": "tsc --noEmit && tsup",
     "start": "tsnd -r tsconfig-paths/register --files --transpile-only ./src/main.ts",
-    "start:prod": "node src/main.js",
+    "start:prod": "node dist/main.js",
     "dev:server": "tsnd -r tsconfig-paths/register --files --transpile-only --respawn --ignore-watch node_modules ./src/main.ts",
     "test": "tsnd -r tsconfig-paths/register --files --transpile-only --respawn --ignore-watch node_modules ./test/all.test.ts",
     "lint": "eslint --fix --ext .ts src",
